@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="margin_dialog">20dp</dimen>
+    <dimen name="text_size_dialog_btn">25sp</dimen><!--对话框按钮  -->
+    <dimen name="text_size_dialog_title">25sp</dimen><!--对话框标题  -->
+    
+    <dimen name="text_size_body">25sp</dimen><!-- 内容,listview等的字体大小 -->
+    <dimen name="text_size_body_btn">20sp</dimen><!-- 主体中的button字体大小 -->
+    <dimen name="ic_size_body_art">40dp</dimen><!-- 主体中的艺术(art)类型的图标尺寸 -->
+    <dimen name="height_list_row">80dp</dimen><!-- 普通list的行高-->
+    <dimen name="padding_setting_list_row">15dp</dimen><!-- 系统设置行距-->
+    <dimen name="padding_spinner_left">10dp</dimen><!-- spinner 左padding -->
+    <dimen name="padding_spinner_right">25dp</dimen><!-- spinner 右padding -->
+    <dimen name="text_size_spinner">23sp</dimen><!-- spinner字体大小 -->
+    <dimen name="min_width_edittext">300dp</dimen><!-- 输入框最小宽度 -->
+    
+    <dimen name="text_size_title">25sp</dimen><!-- 标题栏标题字体大小-->
+    <dimen name="text_size_title_btn">20sp</dimen><!-- 标题栏按钮字体大小 -->
+    <dimen name="height_title_bar">60dp</dimen><!-- 标题栏高度 -->
+    <dimen name="padding_title_bar_btn">10dp</dimen><!-- 标题栏按钮左右边距-->
+    
+    
+    <dimen name="height_tab_bar">60dp</dimen><!-- 标签栏高度 -->
+    <dimen name="text_size_tab">14sp</dimen><!-- 标签栏高度 -->
+    
+
+</resources>

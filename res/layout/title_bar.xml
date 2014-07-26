@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/height_title_bar"
+    android:background="@drawable/ic_title_bg"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <Button
+        android:id="@+id/btn_left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/padding_title_bar_btn"
+        android:background="@drawable/button_back"
+        android:paddingLeft="@dimen/padding_title_bar_btn"
+        android:paddingRight="@dimen/padding_title_bar_btn"
+        android:text="返回"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_title_btn" />
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:singleLine="true"
+        android:text="标题"
+        android:textColor="@android:color/white" 
+        android:textSize="@dimen/text_size_title"
+        />
+
+    <Button
+        android:id="@+id/btn_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/padding_title_bar_btn"
+        android:background="@drawable/button_next"
+        android:paddingLeft="@dimen/padding_title_bar_btn"
+        android:paddingRight="@dimen/padding_title_bar_btn"
+        android:text="新增"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/text_size_title_btn" />
+
+</LinearLayout>

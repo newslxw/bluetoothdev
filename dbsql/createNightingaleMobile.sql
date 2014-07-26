@@ -1,0 +1,67 @@
+UncaughtExceptionHandler
+drop table if exists t_bed;
+drop table if exists t_bed_temperature;
+drop table if exists t_group_beds;
+drop table if exists t_groups;
+drop table if exists t_sys_param;
+drop table if exists t_upload_history;
+drop table if exists t_users;
+
+create table t_bed
+(
+   _id integer              integer not null primary key,
+   bed_no               varchar(20)
+);
+
+create table t_bed_temperature
+(
+   _id                  integer not null primary key,
+   bed_id               integer,
+   temperature          varchar(6),
+   indate               varchar(14),
+   upload_id            integer
+);
+
+create table t_group_beds
+(
+   _id                  integer not null primary key,
+   bed_id               integer,
+   groups_id            integer
+);
+
+create table t_groups
+(
+   _id                  integer not null primary key,
+   group_name           varchar(40),
+   removable            integer comment '1 可删除 2 不可删除'
+);
+
+create table t_sys_param
+(
+   _id                  integer not null primary key,
+   param_code           varchar(40),
+   param_desc           varchar(100),
+   param_value          varchar(100),
+   configable           integer comment '1 可编辑 2 不可编辑',
+   param_type           varchar(10) comment 'sys  系统参数'
+);
+
+create table t_upload_history
+(
+   _id                  integer not null primary key,
+   upload_name          varchar(40),
+   upload_time          varchar(14),
+   user_name            varchar(20),
+   group_name           varchar(40),
+   upload_way           varchar(10) comment 'WIFI-WIFI上传 ,BLUETOOTH-蓝牙上传',
+   bluetooth_name       varchar(20)
+);
+
+create table t_users
+(
+   _id                  integer not null primary key,
+   user_name            varchar(20),
+   group_name           varchar(40),
+   login_time           varchar(14)
+);
+

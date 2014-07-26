@@ -1,0 +1,21 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layoutBackgroundColor"
+    tools:context=".GroupMngActivity" >
+
+	<include android:id="@+id/titleBar" android:layout_width="fill_parent" layout="@layout/title_bar" />    
+	<include android:layout_width="fill_parent" layout="@layout/navigation_bar" />  
+    
+    <ListView
+        android:id="@+id/groupListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navigateDiv"
+        android:layout_below="@+id/titleBar"
+        android:layout_centerHorizontal="true" >
+
+    </ListView>
+    
+</RelativeLayout>

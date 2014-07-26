@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@id/navigateDiv"
+        android:layout_width="fill_parent"
+    	android:layout_height="@dimen/height_tab_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/ic_tab_bg_selected"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_tab_bg_selected" >
+
+            
+            <LinearLayout
+                android:id="@+id/navCt"
+                android:layout_width="wrap_content"
+    			android:layout_height="@dimen/height_tab_bar"
+                android:background="@drawable/layout_nav"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:scrollbars="none" >
+
+                <ImageView
+                    android:id="@+id/ic_waiting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_tab_ct" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:text="测量体温"
+                    android:textSize="@dimen/text_size_tab" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/navBlood"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_tab_bar"
+                android:background="@drawable/layout_nav"
+                android:orientation="vertical"
+                android:scrollbars="none" >
+
+                <ImageView
+                    android:id="@+id/ImageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/transparent"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_tab_blood" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/transparent"
+                    android:text="血压和心率"
+                    android:textSize="@dimen/text_size_tab" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/navUpload"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_tab_bar"
+                android:background="@drawable/layout_nav"
+                android:orientation="vertical"
+                android:scrollbars="none" >
+
+                <ImageView
+                    android:id="@+id/ImageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/transparent"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_tab_upload" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/transparent"
+                    android:text="上传管理"
+                    android:textSize="@dimen/text_size_tab" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/navBed"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_tab_bar"
+                android:background="@drawable/layout_nav"
+                android:orientation="vertical"
+                android:scrollbars="none" >
+
+                <ImageView
+                    android:id="@+id/ImageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/transparent"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_nav_bed" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/transparent"
+                    android:text="病床管理"
+                    android:textSize="@dimen/text_size_tab" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/navHistory"
+                android:layout_width="wrap_content"
+    			android:layout_height="@dimen/height_tab_bar"
+                android:background="@drawable/layout_nav"
+                android:orientation="vertical"
+                android:scrollbars="none" >
+
+            <ImageView
+                android:id="@+id/ImageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/transparent"
+                android:scaleType="center"
+                android:src="@drawable/ic_tab_setting" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/transparent"
+                    android:text="设置"
+                    android:textSize="@dimen/text_size_tab" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout> 

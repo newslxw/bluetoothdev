@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="com.alensic.nursing.mobile"
+    android:versionCode="1"
+    android:versionName="1.0" xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+<!--     <uses-permission android:name="android.permission.INJECT_EVENTS"/>
+ -->    
+    
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:launchMode="singleInstance" >
+        <activity android:name="com.alensic.nursing.mobile.LoginActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.alensic.nursing.mobile.ui.BedMngActivity" />
+        <activity android:name="com.alensic.nursing.mobile.ui.GroupMngActivity" />
+        <activity android:name="com.alensic.nursing.mobile.ui.AssignBedActivity" />
+        <activity android:name="com.alensic.nursing.mobile.ui.TemperatureActivity" />
+        <activity
+            android:name="com.alensic.nursing.mobile.ui.BoothActivity"
+            android:label="@string/title_activity_booth" >
+        </activity>
+        <activity android:name="com.alensic.nursing.mobile.ui.UploadHistoryActivity" />
+        <activity
+            android:name="com.alensic.nursing.mobile.ui.SettingActivity"
+            android:windowSoftInputMode="adjustUnspecified|stateHidden" >
+        </activity>
+        <activity android:name="com.alensic.nursing.mobile.ui.HistoryDetailActivity" >
+        </activity>
+        <activity
+            android:name="com.alensic.nursing.mobile.ui.DeviceListActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity android:name="com.alensic.nursing.mobile.ui.UploadActivity" />
+        <activity android:name="com.alensic.nursing.mobile.ui.BloodActivity" />
+
+        <service
+            android:name="com.alensic.nursing.mobile.service.MyService"
+            android:enabled="true"
+            android:exported="true" >
+        </service>
+        
+      <!--   <service
+            android:name="com.alensic.nursing.mobile.service.MyAccessibilityService" >
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+            <meta-data
+			    android:name="android.accessibilityservice"
+			    android:resource="@xml/accessibility_service_config" />
+			            
+        </service>
+        <uses-permission android:name="android.permission.BIND_ACCESSIBILITY_SERVICE" />
+         -->
+        
+</application>
+
+</manifest>

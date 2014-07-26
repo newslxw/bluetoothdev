@@ -1,0 +1,157 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/loginTopDiv"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layoutBackgroundColor"
+    tools:ignore="HardcodedText" 
+          >
+
+	<include android:id="@+id/titleBar" android:layout_width="fill_parent" layout="@layout/title_bar" /> 
+
+    <RelativeLayout
+        android:id="@+id/contentDiv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" 
+        android:focusable="true" android:focusableInTouchMode="true"
+        >
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/padding_setting_list_row"
+            android:paddingTop="@dimen/padding_setting_list_row" >
+
+            <ImageView
+                android:id="@+id/ic_waiting"
+      			android:layout_width="@dimen/ic_size_body_art"
+      			android:layout_height="@dimen/ic_size_body_art"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_art_person" />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="@dimen/padding_setting_list_row"
+                android:text="姓名/工号:"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/text_size_body" />
+
+            <AutoCompleteTextView
+                android:id="@+id/login_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:imeOptions="actionNext"
+                android:minWidth="@dimen/min_width_edittext"
+                android:singleLine="true"
+                android:textSize="@dimen/text_size_body" >
+
+            </AutoCompleteTextView>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:paddingBottom="@dimen/padding_setting_list_row"
+            android:paddingTop="@dimen/padding_setting_list_row">
+
+            <ImageView
+                android:id="@+id/imageView2"
+      			android:layout_width="@dimen/ic_size_body_art"
+      			android:layout_height="@dimen/ic_size_body_art"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/ic_art_ward" />
+
+            <TextView
+                android:id="@+id/earDeviceValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingRight="@dimen/padding_setting_list_row"
+                android:text="病区："
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textSize="@dimen/text_size_body" />
+
+		<AutoCompleteTextView
+		    android:id="@+id/login_ward"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_gravity="center_vertical"
+            android:minWidth="@dimen/min_width_edittext"
+            android:textSize="@dimen/text_size_body"
+            android:imeOptions="actionDone"
+            android:singleLine="true" />
+
+        </TableRow>
+	    
+    </TableLayout>	    
+    </RelativeLayout>
+
+    
+    
+    <RelativeLayout
+        android:id="@+id/navigateDiv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <ImageView
+            android:id="@+id/navigaterBar"
+            android:layout_width="fill_parent"
+    		android:layout_height="@dimen/height_tab_bar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/ic_tab_bg_selected"
+            android:src="@drawable/ic_tab_bg_selected" />
+	   
+    </RelativeLayout>
+<!-- 
+    <Button
+        android:id="@+id/btn_service_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navigateDiv"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="23dp"
+        android:text="启动服务" />
+
+    <Button
+        android:id="@+id/btn_service_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btn_service_start"
+        android:layout_toRightOf="@+id/btn_service_start"
+        android:text="停止服务" />
+
+    <Button
+        android:id="@+id/btn_service_bind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navigateDiv"
+        android:layout_toRightOf="@+id/btn_service_stop"
+        android:text="绑定服务" />
+
+    <Button
+        android:id="@+id/btn_service_unbind"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/navigateDiv"
+        android:layout_toRightOf="@+id/btn_service_bind"
+        android:text="取消绑定" /> -->
+
+</RelativeLayout>

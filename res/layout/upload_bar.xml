@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@id/navigateDiv"
+        android:layout_width="fill_parent"
+    	android:layout_height="@dimen/height_tab_bar"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/ic_tab_bg_selected"
+        android:shrinkColumns="*"
+        android:stretchColumns="*" >
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_tab_bg_selected" >
+
+            <LinearLayout
+                android:id="@+id/navUpload"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_tab_bar"
+                android:background="@drawable/layout_nav"
+                android:orientation="vertical"
+                android:scrollbars="none" >
+
+                <ImageView
+                    android:id="@+id/ImageView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/transparent"
+                    android:scaleType="center"
+                    android:src="@drawable/ic_tab_upload" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/transparent"
+                    android:text="待上传数据"
+                    android:textSize="@dimen/text_size_tab" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/navHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_tab_bar"
+                android:background="@drawable/layout_nav"
+                android:orientation="vertical"
+                android:scrollbars="none" >
+
+            <ImageView
+                android:id="@+id/ImageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/transparent"
+                android:scaleType="center"
+                android:src="@drawable/ic_tab_upload_history" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@color/transparent"
+                    android:text="上传历史"
+                    android:textSize="@dimen/text_size_tab" />
+
+            </LinearLayout>
+
+        </TableRow>
+
+    </TableLayout> 

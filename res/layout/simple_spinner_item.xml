@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:ellipsize="marquee"
+    android:gravity="left"
+    android:paddingLeft="@dimen/padding_spinner_left"
+    android:paddingRight="@dimen/padding_spinner_right"
+    android:singleLine="true"
+    android:textSize="@dimen/text_size_spinner" />
+

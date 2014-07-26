@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/layoutBackgroundColor" >
+      
+	<include android:id="@+id/titleBar" android:layout_width="fill_parent" layout="@layout/title_bar" />   
+      
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/titleBar"
+        android:layout_centerHorizontal="true"
+        android:background="@color/layoutBackgroundColor"
+        android:gravity="center_vertical"
+        android:minHeight="@dimen/height_list_row" >
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="@dimen/ic_size_body_art"
+            android:layout_height="@dimen/ic_size_body_art"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_art_group" />
+
+        <Spinner
+            android:id="@+id/sel_group"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical" />
+
+        <CheckBox
+            android:id="@+id/chkTemperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:text="@string/strOrderByMeter"
+            style="@style/CustomCheckBox"
+            android:textSize="@dimen/text_size_title_btn" />
+
+        <Button
+            android:id="@+id/btnLinkEarDevice"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:maxHeight="100dp"
+            android:text="连接耳温计"
+            android:textSize="@dimen/text_size_body_btn" />
+
+        <TextView
+            android:id="@+id/earDeviceValue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/navigateDiv"
+        android:layout_alignParentLeft="true"
+        android:orientation="vertical"
+        android:layout_below="@+id/linearLayout1" >
+
+        <ListView
+            android:id="@+id/item_beds"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:choiceMode="singleChoice" 
+            >
+
+        </ListView>
+
+    </LinearLayout>
+    
+	<include android:layout_width="fill_parent" layout="@layout/navigation_bar" />    
+      
+</RelativeLayout>
